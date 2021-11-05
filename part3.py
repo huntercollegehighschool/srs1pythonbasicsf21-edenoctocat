@@ -3,7 +3,7 @@ The function below is supposed to return True if the integer entered as the argu
 """
 
 def isprime(number):
-  for i in range(number/2):
+  for i in range(2, number+1):
     if number % i == 0:
       return False
     else:

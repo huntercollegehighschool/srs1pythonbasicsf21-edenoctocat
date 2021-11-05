@@ -34,4 +34,9 @@ Enter the leg length: 5
 """
 
 def isotriangle(leg):
-  pass # delete this line when you start writing your code
+  triangle = ""
+  for i in range(1, leg+1, 1):
+    triangle += (" " * (leg - i))
+    triangle += ("*" * ((2 * i) - 1))
+    triangle += "\n"
+  return triangle
